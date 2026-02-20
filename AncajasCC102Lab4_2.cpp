@@ -8,14 +8,14 @@ int main()
     double amount = 0;
     int person, products;
     char slip, choice;
-    double prodTotal = 0;
+    double saleTotal = 0;
     double overallTotal = 0;
 
     double sales [product][salesPerson] = {0};
 
     do{
         double amount = 0;
-        double prodTotal = 0;
+        double saleTotal = 0;
         double overallTotal = 0;
 
         double sales [product][salesPerson] = {0};
@@ -37,7 +37,7 @@ int main()
             cout<<"Invalid Slip, Do not Exceed the Limit!"<<endl;
         }
 
-        cout<<"Add Another Slip: ";
+        cout<<"Add Another Slip[Y/N]: ";
         cin>>slip;
         cout<<"\n";
     }while(slip == 'y' || slip == 'Y');
@@ -52,13 +52,13 @@ int main()
     cout<<"TOTAL"<<endl;
 
     for (int j=0; j<product; j++){
-        prodTotal =0;
+        saleTotal =0;
         cout<<j+1<<"\t";
         for (int k=0; k<salesPerson; k++){
             cout<<sales[j][k]<<"\t";
-            prodTotal += sales[j][k];
+            saleTotal += sales[j][k];
         }
-        cout<<prodTotal<<endl;
+        cout<<saleTotal<<endl;
         overallTotal += prodTotal;
     }
 
