@@ -59,7 +59,7 @@ int main()
             saleTotal += sales[j][k];
         }
         cout<<saleTotal<<endl;
-        overallTotal += prodTotal;
+        overallTotal += saleTotal;
     }
 
     cout<<"Total\t";
