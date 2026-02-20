@@ -24,9 +24,9 @@ int main()
         cout<<"\tMonthly Sales Summary\n"<<endl;
 
     do{
-        cout<<"Salesperson{1-4}: ";
+        cout<<"Salesperson(1-4): ";
         cin>>person;
-        cout<<"Product{1-5}: ";
+        cout<<"Product(1-5): ";
         cin>>products;
         cout<<"Amount: ";
         cin>>amount;
@@ -79,3 +79,4 @@ int main()
 
     return 0;
 }
+
