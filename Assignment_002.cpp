@@ -64,4 +64,5 @@ void computeGrade(int *matrix, int student, int subj){
         cout<<" | Student "<<i+1<<" Average : "<<avrg;
         cout<<endl;
     }
+    cout << "\nHighest grade: " << highest << endl;
 }
